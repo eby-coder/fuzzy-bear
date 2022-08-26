@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+--bright-orange: hsl(31, 77%, 52%);
+--dark-cyan: hsl(184, 100%, 22%);
+--very-dark-cyan: hsl(179, 100%, 13%);
+--transparent-white: hsla(0, 0%, 100%, 0.75);
+--very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-light-gray);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.entire-page {
+    display: flex;
+    width: 920px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.block1,
+.block2,
+.block3 {
+    padding: 50px;
+}
+
+img {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--transparent-white);
+    margin-bottom: 75px;
+}
+
+button {
+    border-radius: 50px;
+    border: 3px solid var(--very-light-gray);
+    text-align: center;
+    width: 70%;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    background-color: var(--very-light-gray);
+    padding: 12px 0;
+}
+button:hover {
+    cursor: pointer;
+    border: 3px solid var(--very-light-gray);
+    transition: .3s ease;
+}
+
+.block1 {
+    background-color: var(--bright-orange);
+}
+.block1 button {
+    color: var(--bright-orange);
+}
+.block1 button:hover {
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray);
+}
+
+.block2 {
+    background-color: var(--dark-cyan);
+}
+.block2 button {
+    color: var(--dark-cyan);
+}
+.block2 button:hover {
+    background-color: var(--dark-cyan);
+    color: var(--very-light-gray);
+}
+
+.block3 {
+    background-color: var(--very-dark-cyan);
+}
+.block3 button {
+    color: var(--very-dark-cyan);
+}
+.block3 button:hover {
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-gray);
+}
+
+@media (max-width: 700px) {   
+    .entire-page {
+        display: flex;
+        flex-direction: column;
+        width: 330px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    img,
+    p {
+        margin-bottom: 30px;
+    }
+    h1 {
+        margin-bottom: 20px;
+    }
+}
